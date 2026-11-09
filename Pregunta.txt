@@ -1,0 +1,3 @@
+Pregunta: Si guardaras la clave de cifrado en el mismo sitio que el fichero cifrado, ¿qué habrías conseguido realmente?
+
+Nada de seguridad real: sería como cerrar la caja fuerte con llave y dejar la llave pegada a la puerta. Quien consiga acceder al fichero cifrado tendría también la clave, de modo que podría descifrarlo (e incluso modificarlo y volver a generar un tag válido) sin ningún esfuerzo. La fortaleza de AES-256 deja de importar, porque la seguridad no depende del algoritmo sino de mantener la clave en secreto. Por eso la clave, o la contraseña de la que se deriva, debe guardarse separada de los datos que protege.
